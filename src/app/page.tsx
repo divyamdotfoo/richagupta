@@ -59,23 +59,26 @@ export default function Page() {
 
 function Richa() {
   return (
-    <div className=" xl:max-w-6xl lg:max-w-4xl flex pt-2 items-start justify-around">
+    <div className=" xl:max-w-6xl lg:max-w-4xl flex flex-col md:flex-row md:pt-2 pt-4 items-start justify-around">
       <div>
-        <div className=" flex md:flex-col flex-row md:items-center gap-2">
-          <Image
-            alt="profile picture of Richa Gupta"
-            src={richu}
-            className=" rounded-full xl:w-52 xl:h-52"
-            placeholder="blur"
-          />
-          <div className=" flex flex-col md:items-center items-start gap-2">
-            <h1 className={cn(playfair.className, "text-4xl font-semibold")}>
-              Richa Gupta
-            </h1>
-            <Highlight>
-              <h2 className="font-medium">Cybersecuity Engineer</h2>
-            </Highlight>
+        <div className=" flex flex-col gap-2 w-full">
+          <div className="flex md:flex-col flex-row items-center md:gap-2 gap-4 pb-2 md:pb-0">
+            <Image
+              alt="profile picture of Richa Gupta"
+              src={richu}
+              className=" rounded-full xl:w-52 xl:h-52 lg:w-40 lg:h-40 md:w-32 md:h-32 w-28 h-28"
+              placeholder="blur"
+            />
+            <div className=" flex flex-col md:items-center items-start md:gap-2 gap-3">
+              <h1 className={cn(playfair.className, "text-4xl font-semibold")}>
+                Richa Gupta
+              </h1>
+              <Highlight>
+                <h2 className="font-medium">Cybersecuity Engineer</h2>
+              </Highlight>
+            </div>
           </div>
+
           <Header>Expertise</Header>
           <div className=" pl-2 flex flex-col gap-2">
             {Object.keys(skills).map((skill) => (
@@ -94,7 +97,7 @@ function Richa() {
           </div>
         </div>
       </div>
-      <div className=" flex flex-col gap-10 basis-1/2">
+      <div className=" flex flex-col gap-10 basis-1/2 md:pt-0 pt-4">
         <div>
           <Header>About</Header>
           <h2 className=" pt-2 tracking-wide font-medium text-lg">{INTRO}</h2>
