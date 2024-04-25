@@ -2,10 +2,12 @@ import { HeroHighlight, Highlight } from "@/components/ui/hero-highlight";
 import Image from "next/image";
 import richu from "../../public/richu.jpg";
 import { cn } from "@/utils/cn";
-import { playfair } from "./layout";
 import React from "react";
 import Link from "next/link";
 import { Linkedin, Mail } from "lucide-react";
+import { Playfair_Display } from "next/font/google";
+
+const playfair = Playfair_Display({ subsets: ["latin"] });
 
 const skills = {
   "Cloud Platforms": [
