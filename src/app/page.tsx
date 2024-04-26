@@ -104,10 +104,10 @@ function Richa() {
         </div>
         <div>
           <Header>Experience</Header>
-          <div className=" flex flex-col gap-2 pl-2">
+          <div className=" flex flex-col md:gap-2 gap-4 pl-2">
             {Object.keys(EXPERIENCE).map((exp) => (
               <div
-                className=" flex w-full  justify-between gap-8 relative items-start"
+                className=" flex w-full flex-col md:flex-row  justify-between md:gap-8 gap-2 relative items-start"
                 key={exp}
               >
                 <ExperienceHeading
